@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Taimoor Shabbir</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/media-queries.css">
+  <link rel="icon" type="image/png" href="./assets/profile-pic.png">
+</head>
+<body>
+  <div id="page-container">
+    <div id="header-container"></div>
+
+    <section id="projects">
+      <div class="container">
+        <!-- <h1 class="title">My Projects</h1> -->
+        <p class="section__text__p1">
+          Every project is a project, so long as I'm learning.
+        </p>
+        
+        <div class="project-filter-container">
+          <button class="btn btn-color-2 project-btn active" onclick="filterProjects('all')">
+            <i class="fas fa-layer-group"></i> All Projects
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="filterProjects('systems')">
+            <i class="fas fa-robot"></i> Systems Integration
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="filterProjects('robotics')">
+            <i class="fas fa-robot"></i> Robotics
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="filterProjects('embedded')">
+            <i class="fas fa-microchip"></i> Embedded
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="filterProjects('software')">
+            <i class="fas fa-code"></i> Software
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="filterProjects('automation')">
+            <i class="fas fa-robot"></i> Automation Tool
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="filterProjects('mechanical')">
+            <i class="fas fa-gear"></i> Mechanical
+          </button>
+        </div>
+
+        <div class="projects-grid" id="projects-container">
+          <!-- ROBOTICS -->
+          <div class="project-card" data-category="robotics">
+            <div class="project-image-container">
+              <img src="assets/projects/nerc.gif" alt="Indigenous Automated Fruit-Plucking Robot" class="project-image">
+              <div class="image-overlay">
+                <a href="#" class="overlay-icon" title="Academic Project"><i class="fas fa-book"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Indigenous Automated Fruit-Plucking Robot</h3>
+              <p class="project-description">
+                Optimized mechanical design and PID locomotion with algorithmic improvements — achieved <strong>36% faster</strong> task performance and <strong>~90% plucking efficiency</strong> in trials.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">C</span>
+                <span class="project-tag">AVR</span>
+                <span class="project-tag">PID</span>
+                <span class="project-tag">Sensor Integration</span>
+                <span class="project-tag">FDM</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="robotics">
+            <div class="project-image-container">
+              <img src="assets/projects/ur5.gif" alt="UR5 Path Optimization with ML" class="project-image">
+              <div class="image-overlay">
+                <a href="#" class="overlay-icon" title="Academic Project"><i class="fas fa-book"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">UR5 Path Optimization (ML-assisted)</h3>
+              <p class="project-description">
+                Designed regression-based trajectory optimization to minimize time/energy on UR5; built interactive MATLAB visualizations and benchmarking for alternative paths.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">MATLAB</span>
+                <span class="project-tag">Optimization</span>
+                <span class="project-tag">Kinematics</span>
+                <span class="project-tag">ML</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card" data-category="robotics">
+            <div class="project-image-container">
+              <img src="assets/projects/inverted-pendulum.gif" alt="Cart-Pendulum Optimization and Simulation" class="project-image">
+              <div class="image-overlay">
+                <a href="#" class="overlay-icon" title="Academic Project"><i class="fas fa-book"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Cart-Pendulum Optimization & Simulation</h3>
+              <p class="project-description">
+                Developed and optimized a dynamic control system for a cart–pendulum setup, integrating trajectory optimization and MATLAB-based animation to achieve precise pendulum tip positioning under constraints.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">MATLAB</span>
+                <span class="project-tag">Control Systems</span>
+                <span class="project-tag">Trajectory Optimization</span>
+                <span class="project-tag">Simulation</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="robotics">
+            <div class="project-image-container">
+              <img src="assets/projects/ur5-kinematics.png" alt="UR5 Kinematics Simulation" class="project-image">
+              <div class="image-overlay">
+                <a href="#" class="overlay-icon" title="Academic Project"><i class="fas fa-book"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">UR5 Kinematics Simulation</h3>
+              <p class="project-description">
+                Implemented and validated forward and inverse kinematics algorithms for a 6-DOF UR5 robotic manipulator in MATLAB, enabling accurate motion simulation and visualization. Explored mathematical modeling and analysis of robotic systems.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">MATLAB</span>
+                <span class="project-tag">Robotics</span>
+                <span class="project-tag">Kinematics</span>
+                <span class="project-tag">Simulation</span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="project-card" data-category="robotics">
+            <div class="project-image-container">
+              <img src="assets/projects/nav.gif" alt="Autonomous Robot Navigation" class="project-image">
+              <div class="image-overlay">
+                <a href="#" class="overlay-icon" title="Academic Project"><i class="fas fa-book"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Autonomous Robot Navigation</h3>
+              <p class="project-description">
+                Developed an RRT-based autonomous car navigation simulation in Python, featuring dynamic obstacle avoidance and real-time pathfinding visualization.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Path Planning</span>
+                <span class="project-tag">RRT</span>
+                <span class="project-tag">Simulation</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="robotics">
+            <div class="project-image-container">
+              <img src="assets/projects/laparoscopic-grasper.gif" alt="Sensorized Laparoscopic Grasper" class="project-image">
+              <div class="image-overlay">
+                <a href="https://doi.org/10.1108/SR-09-2024-0765" class="overlay-icon" title="Journal DOI" target="_blank"><i class="fas fa-link"></i></a>
+                <a href="#" class="overlay-icon" title="Academic Project"><i class="fas fa-book"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Sensorized Laparoscopic Surgical Grasper</h3>
+              <p class="project-description">
+                Flexible capacitive force sensor integrated into a laparoscopic tool enabling decoupled force measurement and real-time haptics for MIS; results published in <em>Sensor Review</em> (2025).
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Sensors</span>
+                <span class="project-tag">Haptics</span>
+                <span class="project-tag">FEM</span>
+                <span class="project-tag">Medical Robotics</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-category="robotics">
+            <div class="project-image-container">
+              <img src="assets/projects/conveyor-robot.png" alt="Industrial Manipulator with Conveyor Simulation" class="project-image">
+              <div class="image-overlay">
+                <a href="#" class="overlay-icon" title="Academic Project"><i class="fas fa-industry"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Industrial Manipulator–Conveyor Simulation</h3>
+              <p class="project-description">
+                Designed and simulated an industrial automation process in Workspace 5, integrating two conveyor belts with ABB IRB 1500 and Fanuc A600 manipulators. Implemented object transfer, placement, and macro-based resetting, demonstrating realistic factory workflows and validating robotic integration for improved efficiency and flexibility.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Robotics</span>
+                <span class="project-tag">Simulation</span>
+                <span class="project-tag">Workspace 5</span>
+                <span class="project-tag">Industrial Automation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- EMBEDDED -->
+          <div class="project-card" data-category="embedded">
+            <div class="project-image-container">
+              <img src="assets/work/dacs-ui.png" alt="Data Acquisition & Control System (Qt/C++)" class="project-image">
+              <div class="image-overlay">
+                <a href="#" class="overlay-icon" title="Industrial Project"><i class="fas fa-industry"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Data Acquisition & Control System (DACS)</h3>
+              <p class="project-description">
+                Modular Qt/C++ desktop suite for avionics SIL/HIL: signal I/O, data logging, and bus interfacing. Forms core tooling for system-level verification at NASTP.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Qt</span>
+                <span class="project-tag">C++</span>
+                <span class="project-tag">SIL/HIL</span>
+                <span class="project-tag">DDS/TCP/UDP</span>
+              </div>
+            </div>
+          </div>
+
+          
+         
+          <div class="project-card" data-category="embedded">
+            <div class="project-image-container">
+              <img src="assets/projects/8051-pcb.png" alt="8051 Microcontroller Embedded System" class="project-image">
+              <div class="image-overlay">
+                <a href="#" class="overlay-icon" title="Academic Project"><i class="fas fa-microchip"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">8051 Microcontroller Embedded System</h3>
+              <p class="project-description">
+                Designed and fabricated a custom PCB integrating an Atmel 8051 microcontroller, tri-state buffers, LED bargraphs, and DIP switches. Implemented multiple software modes including distance calculation, Fibonacci series generation, LED pattern blinking, and PWM duty cycle control, validated through Proteus simulation.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">8051</span>
+                <span class="project-tag">Embedded Systems</span>
+                <span class="project-tag">PCB Design</span>
+                <span class="project-tag">Proteus</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- MECHANICAL -->
+          <div class="project-card" data-category="mechanical">
+            <div class="project-image-container">
+              <img src="assets/projects/laparoscopic-grasper.png" alt="3D Laparoscopic Tool Model" class="project-image">
+              <div class="image-overlay">
+                <a href="#" class="overlay-icon" title="Research Project"><i class="fas fa-flask"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">3D Laparoscopic Tool with Tactile Sensor</h3>
+              <p class="project-description">
+                Designed and developed a 3D CAD model of a laparoscopic surgical tool and integrated a tactile sensor-enabled grasper, enhancing precision and force feedback in minimally invasive surgery applications.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">3D Modeling</span>
+                <span class="project-tag">Biomedical</span>
+                <span class="project-tag">Sensors</span>
+                <span class="project-tag">Surgical Robotics</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="mechanical">
+            <div class="project-image-container">
+              <img src="assets/projects/fruit-robot-chassis.png" alt="Indigenous Fruit-Picking Robot Chassis" class="project-image">
+              <div class="image-overlay">
+                <a href="#" class="overlay-icon" title="Academic Project"><i class="fas fa-tractor"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Fruit-Picking Robot Chassis (Indigenous Design)</h3>
+              <p class="project-description">
+                Designed and developed a 3D chassis for an indigenous fruit-picking robot—optimized for modularity, stability on uneven terrain, and payload integration with vision and end-effector subsystems.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">3D Modeling</span>
+                <span class="project-tag">Robotics</span>
+                <span class="project-tag">Mechatronics</span>
+                <span class="project-tag">AgriTech</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 1) HIL Testbench Integration -->
+          <div class="project-card" data-category="systems">
+            <div class="project-image-container">
+              <img src="assets/work/hil-integration.png" alt="Modular HIL Testbench Integration" class="project-image">
+              <div class="image-overlay">
+                <a href="#" class="overlay-icon" title="Avionics Integration"><i class="fas fa-diagram-project"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Modular HIL Testbench Integration</h3>
+              <p class="project-description">
+                Integrated MUX-Bus emulator, subsystem simulator, stimulators, DACS, and mission computer via MIL-STD-1553, DDS (UDP), and discrete I/O—enabling synchronized comms and deterministic real-time test execution.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">HIL</span>
+                <span class="project-tag">MIL-STD-1553</span>
+                <span class="project-tag">DDS/UDP</span>
+                <span class="project-tag">Real-Time</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2) DACS (C++/Qt, PXIe) -->
+          <div class="project-card" data-category="software">
+            <div class="project-image-container">
+              <img src="assets/work/dacs-ui.png" alt="Data Acquisition & Control System (DACS)" class="project-image">
+              <div class="image-overlay">
+                <a href="#" class="overlay-icon" title="Software System"><i class="fas fa-gauge"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Data Acquisition & Control System (DACS)</h3>
+              <p class="project-description">
+                Built a modular C++/Qt DACS integrating NI PXIe, DAQmx, DDS, and XML configs for real-time acquisition and scalable multi-subsystem coordination; applied OOP patterns for maintainability and debugging.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">C++</span>
+                <span class="project-tag">Qt</span>
+                <span class="project-tag">PXIe/DAQmx</span>
+                <span class="project-tag">DDS</span>
+                <span class="project-tag">XML</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3) MIL-STD-1553 Bus Emulator -->
+          <div class="project-card" data-category="embedded">
+            <div class="project-image-container">
+              <img src="assets/work/mbus-emulator.png" alt="MIL-STD-1553 Multiplex Bus Emulator" class="project-image">
+              <div class="image-overlay">
+                <a href="#" class="overlay-icon" title="Bus Emulator"><i class="fas fa-network-wired"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">MIL-STD-1553 Bus Emulator (MBE)</h3>
+              <p class="project-description">
+                Developed a modular C++ emulator for real-time BC↔RT messaging over DDS; added ISF-based dynamic configuration, Qt GUI, thread-safe ops, and an ADTL2 library on ADTL0/1 for robust middleware integration.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">MIL-STD-1553</span>
+                <span class="project-tag">DDS</span>
+                <span class="project-tag">Threads/Mutex</span>
+                <span class="project-tag">Qt</span>
+                <span class="project-tag">ISF/ADTL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4) Radar Software Simulator -->
+          <div class="project-card" data-category="software">
+            <div class="project-image-container">
+              <img src="assets/work/radar-sim.png" alt="Radar Software Simulator" class="project-image">
+              <div class="image-overlay">
+                <a href="#" class="overlay-icon" title="Simulation"><i class="fas fa-satellite-dish"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Radar Software Simulator</h3>
+              <p class="project-description">
+                Emulated radar interfaces, processes, and command execution with modular C++; formatted messages and enabled real-time 1553 comms with a Bus Controller to validate avionics integration per design specs.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Simulation</span>
+                <span class="project-tag">MIL-STD-1553</span>
+                <span class="project-tag">C++</span>
+                <span class="project-tag">BC/RT</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5) UDP↔DDS Stimulator Interface -->
+          <div class="project-card" data-category="systems">
+            <div class="project-image-container">
+              <img src="assets/work/udp-dds.png" alt="UDP–DDS Data Interface for Stimulators" class="project-image">
+              <div class="image-overlay">
+                <a href="#" class="overlay-icon" title="Middleware"><i class="fas fa-arrows-left-right"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">UDP–DDS Data Interface (Stimulators)</h3>
+              <p class="project-description">
+                Bridged legacy UDP to DDS with bit-level encoding/decoding and precise type conversions per subsystem ICDs (radar/ILS/INS), delivering robust, real-time integration and standards compliance.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">UDP</span>
+                <span class="project-tag">DDS</span>
+                <span class="project-tag">ICDs</span>
+                <span class="project-tag">Real-Time</span>
+                <span class="project-tag">Avionics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6) DACS Configuration Management Tool -->
+          <div class="project-card" data-category="automation">
+            <div class="project-image-container">
+              <img src="assets/work/dacs-config.png" alt="DACS Configuration Management Tool" class="project-image">
+              <div class="image-overlay">
+                <a href="#" class="overlay-icon" title="Engineering Tool"><i class="fas fa-toolbox"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">DACS Configuration Management Tool</h3>
+              <p class="project-description">
+                Built a C++/Qt tool with XML schemas for signal mapping, pin assignment, and hardware configs; added real-time vector tracking and a streamlined GUI with automated XML generation.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">C++</span>
+                <span class="project-tag">Qt</span>
+                <span class="project-tag">XML</span>
+                <span class="project-tag">Tooling</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7) Wiring Documentation System (SIL) -->
+          <div class="project-card" data-category="automation">
+            <div class="project-image-container">
+              <img src="assets/work/wiring-docs.png" alt="Database-Driven Aircraft Wiring Documentation System" class="project-image">
+              <div class="image-overlay">
+                <a href="#" class="overlay-icon" title="Documentation System"><i class="fas fa-database"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">SIL Wiring Documentation System</h3>
+              <p class="project-description">
+                Developed a database-driven documentation platform with full-text search and version control to digitize aircraft wiring records—boosting traceability, fault detection, and maintenance efficiency.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Database</span>
+                <span class="project-tag">Full-Text Search</span>
+                <span class="project-tag">Version Control</span>
+                <span class="project-tag">SIL</span>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <div id="footer-container"></div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/components/header.js"></script>
+  <script src="js/components/footer.js"></script>
+  <script src="js/components/projects.js"></script>
+
+</body>
+</html>

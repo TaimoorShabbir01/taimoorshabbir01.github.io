@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taimoor Shabbir - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/media-queries.css">
+  <link rel="icon" type="image/png" href="./assets/profile-pic.png">
+</head>
+<body>
+  <div id="page-container">
+    <div id="header-container"></div>
+
+    <section id="journey">
+      <!-- <h1 class="title">My Journey</h1> -->
+      
+      <div class="journey-toggle">
+        <button class="toggle-btn active" onclick="showSection('experience')">
+          <i class="fas fa-graduation-cap"></i> Experience
+        </button>
+        <button class="toggle-btn" onclick="showSection('education')">
+          <i class="fas fa-briefcase"></i> Education
+        </button>
+      </div>
+      
+      <div class="journey-container">
+        <!-- Education Section -->
+        <div id="education" class="journey-section">
+          <!-- NUST -->
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <a href="https://nust.edu.pk/" target="_blank">
+                <img src="./assets/icons/nust.png" alt="NUST" class="timeline-logo"/>
+              </a>
+              <div class="timeline-title">
+                <h2>BSc Mechatronics Engineering</h2>
+                <div class="timeline-date">Sep 2019 – Jun 2023</div>
+                <div class="timeline-position">National University of Sciences & Technology (NUST), Islamabad</div>
+              </div>
+            </div>
+            <div class="timeline-details">
+              <ul>
+                <li><strong>GPA:</strong> 3.56 / 4.00</li>
+                <li><strong>Coursework/Focus:</strong> Robotics, Control Theory, Systems Engineering, Modeling & Simulation</li>
+                <li><strong>Thesis (Capstone):</strong> Development of a Force Sensor–Integrated Surgical Instrument for Tele-Manipulation–Based MIS</li>
+                <li><strong>Masters Courses (Audit):</strong> Biomedical Instrumentation, Robotics Manipulation, Machine Learning
+              </ul>
+              <div class="award-badge">
+                <i class="fas fa-award award-icon"></i>
+                <span><strong>2x Academic Excellence Awards:</strong> Received for securing SGPA &gt; 3.5 in 4 consecutive semesters</span>
+              </div>
+              <div class="award-badge">
+                <i class="fas fa-award award-icon"></i>
+                <span><strong>1st Runner-up NERC:</strong> Led the team in the indigenous category of Pakistan’s largest robotics contest (NERC 2022).</span>
+              </div>
+
+              <div class="award-badge">
+                <i class="fas fa-award award-icon"></i>
+                <span><strong>Ignite Funding Competition:</strong> Secured project funding in the National Technology Innovation competition.</span>
+              </div>
+              <div class="award-badge">
+                <i class="fas fa-award award-icon"></i>
+                <span><strong>Distinguishing Student Award:</strong> “Company Senior NUST Student” (most senior student appointment).</span>
+              </div>
+
+              <div class="award-badge">
+                <i class="fas fa-award award-icon"></i>
+                <span><strong>Robotics & Automation Club:</strong> Mentored students through robotics and C/C++ workshops.</span>
+              </div>
+
+            </div>
+          </div>
+          <!-- FSC -->
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <a href="https://nust.edu.pk/" target="_blank">
+                <img src="./assets/icons/pgc.png" alt="PGC" class="timeline-logo"/>
+              </a>
+              <div class="timeline-title">
+                <h2>Pre-Engineering (Intermediate)</h2>
+                <div class="timeline-date">2017 – 2019</div>
+                <div class="timeline-position">Punjab Group of Colleges, Pattoki</div>
+              </div>
+            </div>
+            <div class="timeline-details">
+              <ul>
+                <li><strong>Grade:</strong> A+</li>
+                <li>Class Representative & Cricket Team Captain</li>
+              </ul>
+              <div class="award-badge">
+                <i class="fas fa-award award-icon"></i>
+                <span><strong>Regional Distinction:</strong> Ranked top in Kasur district during Intermediate (First Year)</span>
+              </div>
+              <div class="award-badge">
+                <i class="fas fa-award award-icon"></i>
+                <span><strong>Scholarship:</strong> Awarded a fully funded scholarship for Junior and Senior Year</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Experience Section -->
+        <div id="experience" class="journey-section active">
+          <!-- NASTP -->
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <a href="#" target="_blank">
+                <img src="./assets/icons/nastp.png" alt="NASTP" class="timeline-logo"/>
+              </a>
+              <div class="timeline-title">
+                <h2>Systems Engineer (Avionics / Systems Integration)</h2>
+                <div class="timeline-date">Sep 2023 – Present</div>
+                <div class="timeline-position">National Aerospace Science & Technology Park (NASTP)</div>
+              </div>
+            </div>
+            <div class="timeline-details">
+              <ul>
+                <li>Co-developed a modular SIL/HIL lab applying systems engineering across the V-model lifecycle.</li>
+                <li>Built a C++/Qt Data Acquisition & Control System (DACS), a MIL-STD-1553B bus emulator, and software simulators to enable modular SIL development and system-level verification.</li>
+                <li>Streamlined lab support/maintenance via automation tooling to reduce technician workload and turnaround times.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- MNRT (NUST) -->
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <a href="#" target="_blank">
+                <img src="./assets/icons/nust.png" alt="MNRT Lab" class="timeline-logo"/>
+              </a>
+              <div class="timeline-title">
+                <h2>Undergraduate Research Student</h2>
+                <div class="timeline-date">Sep 2022 – Aug 2023</div>
+                <div class="timeline-position">Micro-Nano Robotic Technologies Lab (NUST)</div>
+              </div>
+            </div>
+            <div class="timeline-details">
+              <ul>
+                <li>Contributed to “Nanomaterials-based Tactile Sensors for Tele-Manipulation in Robotic Surgery.”</li>
+                <li>Designed a sensorized laparoscopic grasper with a flexible capacitive force sensor, achieving decoupled force measurement and real-time haptic feedback via a wearable band.</li>
+                <li>Validated designs with FEM simulations and electromechanical optimization.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NCRA R&D Intern (requested) -->
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <a href="#" target="_blank">
+                <img src="./assets/icons/ncra.png" alt="NCRA" class="timeline-logo"/>
+              </a>
+              <div class="timeline-title">
+                <h2>Research and Development Intern</h2>
+                <div class="timeline-date">Summer 2022</div>
+                <div class="timeline-position">National Centre of Robotics and Automation</div>
+              </div>
+            </div>
+            <div class="timeline-details">
+              <ul>
+                <li>Implemented and validated forward and inverse kinematics algorithms for a 6-DOF UR5 robotic manipulator
+in MATLAB, enabling accurate motion simulation and visualization.</li>
+                <li>Explored mathematical modeling and analysis of robotic systems, gaining hands-on exposure to applications
+across medical, agricultural, and manufacturing domains.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer-container"></div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/components/header.js"></script>
+  <script src="js/components/footer.js"></script>
+  <script>
+    function showSection(sectionId) {
+      document.querySelectorAll('.journey-section').forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(sectionId).classList.add('active');
+      document.querySelectorAll('.toggle-btn').forEach(btn => btn.classList.remove('active'));
+      event.currentTarget.classList.add('active');
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+      const cards = document.querySelectorAll('.timeline-card');
+      cards.forEach((card, index) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        card.style.transitionDelay = `${index * 0.1}s`;
+        setTimeout(() => {
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        }, 500 + (index * 100));
+      });
+    });
+  </script>
+</body>
+</html>
