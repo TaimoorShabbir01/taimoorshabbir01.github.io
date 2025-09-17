@@ -1,0 +1,51 @@
+/* NAV list layout */
+#desktop-nav .nav-links {
+  display: flex;
+  align-items: center;         /* vertical alignment */
+  gap: 20px;                   /* spacing between items */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Make each li align its child (link or button) */
+#desktop-nav .nav-links > li {
+  display: flex;
+  align-items: center;
+}
+
+/* Link look & hit area */
+#desktop-nav .nav-links a {
+  display: inline-flex;
+  align-items: center;
+  height: 40px;                /* match button height */
+  padding: 0 10px;
+  line-height: 1;              /* avoid extra vertical space */
+  text-decoration: none;
+}
+
+/* Theme toggle button aligned like a link */
+.theme-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;                /* same as links */
+  width: 40px;                 /* square touch target */
+  padding: 0;
+  margin: 0;
+  border: 1px solid var(--border, rgba(148,163,184,.18));
+  background: var(--card, transparent);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Make the SVG sit nicely on the baseline */
+.theme-toggle-btn .theme-icon {
+  display: block;
+  vertical-align: middle;
+}
+
+/* Optional: nudge the toggle slightly away from links */
+#desktop-nav .nav-links > li:last-child {
+  margin-left: 6px;
+}
